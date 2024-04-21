@@ -1,0 +1,99 @@
+/* Base styles for the app container */
+.app-container {
+  display: flex;
+  justify-content: center;
+  background: red(93, 9, 121, 1);
+  padding: 5%;
+}
+
+/* Styles for the app bar */
+.app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 10px;
+}
+
+/* Left side styles */
+.app-bar-left {
+  display: flex;
+  align-items: center;
+}
+
+.app-logo {
+  font-family: 'Poppins';
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 20px; /* Adjust the font size as needed */
+  color: black;
+}
+
+.app-links {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive styles for screens smaller than 600px */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 2%;
+  }
+  .app-bar {
+    height: 40px;
+    padding: 0 5px;
+  }
+  .app-logo {
+    font-size: 16px;
+  }
+  .app-links {
+    img {
+      width: 20px;
+    }
+  }
+}
+
+/* Responsive styles for screens between 600px and 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  .app-container {
+    padding: 3%;
+  }
+  .app-bar {
+    height: 45px;
+    padding: 0 8px;
+  }
+  .app-logo {
+    font-size: 18px;
+  }
+  .app-links {
+    img {
+      width: 22px;
+    }
+  }
+}
+
+.expand-line-button {
+  position: relative;
+}
+
+.expand-line-button::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:orange;
+  transition: width 0.3s ease-in-out;
+}
+
+.expand-line-button:hover::before {
+  width: 100%;
+}
+
+
+
+/* Responsive styles for screens larger than 900px */
+@media (min-width: 901px) {
+  /* Add responsive styles here for even larger screens */
+}

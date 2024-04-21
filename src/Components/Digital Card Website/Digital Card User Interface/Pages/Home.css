@@ -1,0 +1,20 @@
+.first-section {
+    height: 100vh; /* Set the height of the first section to the viewport height */
+    background-color: #001E3C; /* Background color of the first section */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shutter-up {
+    animation: shutterUp 2s ease 10s forwards; /* Animation duration, delay, and timing */
+  }
+  
+  @keyframes shutterUp {
+    0% {
+      transform: translateY(0); /* Initial position of the first section */
+    }
+    100% {
+      transform: translateY(-100%); /* Shutter-up effect */
+    }
+  }
+  

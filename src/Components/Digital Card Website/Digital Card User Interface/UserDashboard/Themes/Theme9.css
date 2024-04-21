@@ -1,0 +1,14 @@
+.about{
+     color: #000;
+     text-align: justify;
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+    }
+.heading{
+     color: #000;
+     text-align: center;
+     font-size: 25px;
+     font-family: 'Poppins', sans-serif;
+     margin-bottom: -10px;
+     font-weight: bold;
+    }

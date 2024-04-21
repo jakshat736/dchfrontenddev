@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+.container {
+  font-size: 24px;
+  width: 600px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Remove margin from top */
+  outline: 1px solid black;
+  padding: 20px; /* Added padding for spacing */
+}
+
+h2 {
+  text-align: center;
+  margin: 0; /* Remove margin from top */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+p {
+  text-align: center;
+  margin: 0; /* Remove margin from top */
+}
